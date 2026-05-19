@@ -10,6 +10,9 @@
 
     >
 
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+
     <style>
             /* Make sure the html and body take up the full height */
     html, body {
