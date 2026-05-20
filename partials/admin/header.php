@@ -1,10 +1,10 @@
-<?php 
+<?php
 
-include __DIR__ . "/../../helpers.php";
+include __DIR__ . "/../../init.php";
 
 echo base_url("cms-pdo");
 ?>
-<!DOCTYPE html>    
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
