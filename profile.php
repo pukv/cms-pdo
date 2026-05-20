@@ -34,7 +34,7 @@ include "partials/admin/navbar.php";
                         <!-- Form Group (username)-->
                         <div class="mb-3">
                             <label class="small mb-1" for="inputUsername">Username</label>
-                            <input class="form-control" id="inputUsername" type="text" placeholder="Please enter Username" value="pukv" disabled>
+                            <input class="form-control" id="inputUsername" type="text" placeholder="Please enter Username" value="jsmith" disabled>
                         </div>
                         <!-- Form Row-->
                         <div class="row gx-3 mb-3">
@@ -65,7 +65,7 @@ include "partials/admin/navbar.php";
                         <!-- Form Group (email address)-->
                         <div class="mb-3">
                             <label class="small mb-1" for="inputEmailAddress">Email address</label>
-                            <input class="form-control" id="inputEmailAddress" type="email" name="email" placeholder="Please enter Email address" value="jsmith@example.com">
+                            <input class="form-control" id="inputEmailAddress" type="email" name="email" placeholder="Please enter Email address" value="jsmith@exam.com">
                         </div>
                         <!-- Form Row-->
                         <div class="row gx-3 mb-3">
