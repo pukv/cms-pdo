@@ -10,6 +10,8 @@ $db = new Database();
 // echo "<pre>";
 
 $db->getConnection();
+
+// use var_dump; if it returns object #2 we're good 2 go
 ?>
 
     <!-- Main Content -->

@@ -9,6 +9,15 @@ class Database
 
     public $conn;
 
+    /**
+     * Establishes and returns the PDO database connection.
+     *
+     * Initializes the connection using the object's host, database name,
+     * username, and password properties. Sets the error mode to throw exceptions.
+     *
+     * @return \PDO|null The PDO connection instance, or null if the connection fails.
+     */
+
     public function getConnection()
     {
         $this->conn = null;
