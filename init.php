@@ -16,5 +16,6 @@ require_once "helpers.php";
 
 // Define global constants
 define("APP NAME", "CMS PDO System");
+define("PROJECT_DIR", "cms-pdo");
 
 ?>
