@@ -1,12 +1,20 @@
 <?php
-include "partials/header.php";
-include "partials/navbar.php";
-include "partials/hero.php";
+include 'partials/header.php';
+include 'partials/navbar.php';
+include 'partials/hero.php';
 
 if (isPostRequest()) {
-    $username = getPostData("username");
+    $username = getPostData('username');
+    $email = getPostData('email');
+    $password = getPostData('password');
 
-    var_dump($username);
+    $user = new User();
+
+    if ($user->register($username, $email, $password)) {
+        redirect('login');
+    } else {
+        echo 'Registration Failed.';
+    }
 }
 ?>
 
@@ -17,7 +25,7 @@ if (isPostRequest()) {
             <div class="col-md-6">
                 <form method="post">
                     <div class="mb-3">
-                        <label for="name" class="form-label">Username *</label>
+                        <label for="username" class="form-label">Username *</label>
                         <input
                             name="username"
                             type="text"
@@ -29,6 +37,7 @@ if (isPostRequest()) {
                     <div class="mb-3">
                         <label for="email" class="form-label">Email address *</label>
                         <input
+                            name="email"
                             type="email"
                             class="form-control"
                             id="email"
@@ -38,6 +47,7 @@ if (isPostRequest()) {
                     <div class="mb-3">
                         <label for="password" class="form-label">Password *</label>
                         <input
+                            name="password"
                             type="password"
                             class="form-control"
                             id="password"
@@ -47,6 +57,7 @@ if (isPostRequest()) {
                     <div class="mb-3">
                         <label for="confirm-password" class="form-label">Confirm Password *</label>
                         <input
+                            name="confirm-password"
                             type="password"
                             class="form-control"
                             id="confirm-password"
@@ -63,5 +74,5 @@ if (isPostRequest()) {
     </main>
 
 
-<?php include "partials/footer.php";
+<?php include 'partials/footer.php';
 ?>
